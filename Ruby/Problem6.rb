@@ -1,7 +1,14 @@
-def sumsquares(naturalNumber)
+def sumDiff(naturalNumber)
+  num = 0
+  sumNum = 0
+  squaredNum = 0
   (0).upto(naturalNumber) do |x|
-    puts num = x^2
+    num += x**2
+    sumNum += x
   end
+  squaredNum = sumNum**2
+  squaredNum - num
 end
 
-sumsquares(100)
+puts sumDiff(100)
+
